@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mundo Caricatura">
+    <meta name="author" content="DesMex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mundo Caricatura</title>
+
+    <!-- Compiled and minified CSS 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+    <link rel="stylesheet" href="../Css/materialize.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="../Css/quiz.css">
+
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script type="module" src="../cmp/banner.js"></script>
+</head>
+
+<body>
+    <ban-ner></ban-ner>
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating red btn-large">
+            <i class=" material-icons">report_problem</i>
+        </a>
+        <ul>
+            <li>
+                <a href="" class="btn-floating yellow">
+                    <i class="material-icons">warning</i>
+                </a>
+
+            </li>
+            <li>
+
+                <a href="" class="btn-floating blue">
+                    <i class="material-icons">link</i>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    <div class="card">
+        <div class="card horizontal blue lighten-2">
+
+            <div class="card-image  blue lighten-2">
+                <i class="zmdi zmdi-account-circle zmdi-hc-5x"><img  class="circle responsive-img" src="../img/bar.png" style="max-width: 90px; max-height: 90px"></i>
+            </div>
+            <div class="card-stacked blue lighten-2">
+                <div class="card-content blue lighten-2">
+                    <p><strong>Instrucciones: Debes selecciona la respuesta que creas correcta</strong></p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div id="quiz"></div>
+                <a class="waves-effect waves-light green modal-trigger btn btn-large" id="submit" href="#modal1" type="submit">Resultados</a>
+
+            </div>
+        </div>
+        <!--view Modal-->
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Resultado del Quiz</h4>
+                <p>
+                    <div id="results" onchange="getPreguntas()"></div>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <a href="../demo/pantalla2.html" class="modal-action waves-effect waves-green btn-flat">Aceptar</a>
+            </div>
+        </div>
+
+        <div id="divModalAvisos" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModallabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">&times;</button>
+                        <h4 class="modal-title">
+                            <i class="fa fa-exclamation fa-lg" aria-hidden="true"></i> &nbsp;Aviso
+                        </h4>
+                    </div>
+                    <div id="divAvisos" class="modal-body">
+                        <p>En espera de mensaje...</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
+        <script src="../js/materialize.js"></script>
+        <!--End view Modal-->
+        <script type="text/javascript" src="../js/errores.js"></script>
+        <script type="text/javascript" src="../js/quiz3.js"></script>
+        <!--Modal Result-->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.modal');
+                var instances = M.Modal.init(elems, {
+                    dismissible: false,
+                    opacity: 0.0,
+                    inDuration: 10,
+                    outDuration: 20,
+                    startingTop: '10%',
+                    endingTop: '10%'
+                });
+            });
+        </script>
+</body>
+
+</html>

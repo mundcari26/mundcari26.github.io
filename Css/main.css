@@ -1,0 +1,13 @@
+/*Hoja de estilos*/
+#entorno {
+ display: block;
+	margin: 0 auto;
+}
+#fondo {
+	opacity: 0.5;
+	
+
+}
+#responsive-img{
+	max-width: 100%;
+}

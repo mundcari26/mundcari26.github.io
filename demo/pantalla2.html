@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mundo Caricatura">
+    <meta name="author" content="DesMex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mundo Caricatura</title>
+
+    <!-- Compiled and minified CSS 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+    <link rel="stylesheet" href="../Css/materialize.min.css">
+
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script type="module" src="../cmp/banner.js"></script>
+</head>
+
+<body>
+    <ban-ner></ban-ner>
+
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating red accent-4 btn-large">
+            <i class="material-icons">report_problem</i>
+        </a>
+        <ul>
+            <li>
+                <a href="" class="btn-floating yellow">
+                    <i class="material-icons">warning</i>
+                </a>
+
+            </li>
+            <li>
+
+                <a href="" class="btn-floating blue">
+                    <i class="material-icons">link</i>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    <div class="col s12 m7">
+        <div class="card-tabs ">
+            <ul class="tabs   blue lighten-2">
+                <li class="tab "><a class="active " href="pantalla.html"><i class="small material-icons ">speaker_notes</i></a></li>
+                <li class="tab"><a class="active" href="pantalla2.html"><i class="small material-icons">library_books</i></a></li>
+                <li class="tab"><a class="active" href="pantalla3.html"><i class="small material-icons">view_quilt</i></a></li>
+            </ul>
+
+        </div>
+        <div class="card horizontal blue lighten-2">
+
+            <div class="card-image  blue lighten-2">
+                <i class="zmdi zmdi-account-circle zmdi-hc-5x"><img  class="circle responsive-img" src="../img/bar.png" style="max-width: 90px; max-height: 90px"></i>
+            </div>
+            <div class="card-stacked blue lighten-2">
+                <div class="card-content blue lighten-2">
+                    <p>Hola, soy la Bart vamos a jugar Quiz de prueba donde solo tienes un modo de juego. Para mas imformación presiona el boton verde</p>
+                </div>
+                <a class="btn-floating halfway-fab waves-effect waves-light blue  modal-trigger" href="#modal1"><i class="small material-icons green darken-2">add</i></a>
+            </div>
+
+        </div>
+        <div id="modal1" class="modal modal-fiexed-footer">
+            <div class="modal-content">
+                <h5>Instrucciones</h5>
+                <i class="zmdi zmdi-account-circle zmdi-hc-5x"><img  class="circle responsive-img" src="../img/fondo.png"></i>
+                <p style="text-align: justify" ;>Insertar instrucciones aquí</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="modal-close  btn red">Cerrar</a>
+                <a href="#" class="modal-close  btn green">Acepatar</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <center>
+                <h3><strong>Elige tu quiz favorito</strong></h3><br>
+                <a class="waves-effect waves-light btn-large" href="quiz.html"><i class="medium material-icons left">dvr</i>Falso/verdadero</a><br><br>
+                <a class="waves-effect waves-light btn-large" href="quizDificultad.html"><i class="medium material-icons left">dvr</i>Opción multiple</a><br><br>
+            </center>
+
+        </div>
+    </div>
+
+
+
+    <!-- Compiled and minified JavaScript -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
+    <script src="../js/materialize.js"></script>
+    <script src="js/iniciarJuego.js"></script>
+</body>
+
+</html>

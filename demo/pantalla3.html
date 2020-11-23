@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mundo Caricatura">
+    <meta name="author" content="Michell">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mundo Caricatura</title>
+
+    <!-- Compiled and minified CSS
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="../Css/materialize.min.css">
+
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <script type="module" src="../cmp/banner.js"></script>
+</head>
+
+<body>
+    <ban-ner></ban-ner>
+
+    <div class="card horizontal blue lighten-2">
+
+        <div class="card-image  blue lighten-2">
+            <i class="zmdi zmdi-account-circle zmdi-hc-5x"><img  class="circle responsive-img" src="../img/bob.png" style="max-width: 90px; max-height: 90px"></i>
+        </div>
+        <div class="card-stacked blue lighten-2">
+            <div class="card-content blue lighten-2">
+                <p>Hola, soy la Bob Esponja vamos a jugar rompecabezas de prueba donde solo tienes un modo de juego. Para mas imformación presiona el boton verde</p>
+            </div>
+            <a class="btn-floating halfway-fab waves-effect waves-light blue  modal-trigger" href="#modal1"><i class="small material-icons green darken-2">add</i></a>
+        </div>
+
+    </div>
+    <div id="modal1" class="modal modal-fiexed-footer">
+        <div class="modal-content">
+            <p style="text-align: justify" ;>Instrucciones</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="modal-close  btn green">Aceptar</a>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="container">
+
+
+        <div class="row">
+            <center>
+                <a class="waves-effect waves-light btn-large green darken-2" style="width: 250px; text-align: left; " href="rompeInter.html"><i class="medium material-icons left">dashboard</i>Facil</a><br><br>
+            </center>
+        </div>
+        <div class="row">
+            <center>
+                <a class="waves-effect waves-light btn-large red darken-2" style="width: 250px; text-align: left; " href="rompeD.html"><i class="medium material-icons left">dashboard</i>Dificil</a><br><br>
+            </center>
+        </div>
+    </div>
+
+
+
+    <!-- Compiled and minified JavaScript -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
+    <!--SCRIPT DE ESTILOS DE MATERIALIZE-->
+    <script src="../js/materialize.js"></script>
+    <script src="js/iniciarJuego.js"></script>
+</body>
+
+</html>

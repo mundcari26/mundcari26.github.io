@@ -1,0 +1,109 @@
+.jqPuzzle {
+    padding: 5px;
+    border: 1px solid #222222;
+    background-color: #DDDDFF;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.jqPuzzle div {
+    background-color: transparent;
+    margin: 0px;
+    padding: 0px;
+    border-style: none;
+}
+
+.jqPuzzle .jqp-wrapper {
+    padding: 2px;
+    border: 1px solid #FFFFFF;
+    background-color: #444455;
+}
+
+.jqPuzzle .jqp-piece {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 36px;
+}
+
+.jqPuzzle .jqp-piece:hover {
+    border-style: dashed;
+}
+
+.jqPuzzle.jqp-solved .jqp-piece:hover {
+    border-style: solid;
+}
+
+.jqPuzzle .jqp-controls {
+    float: left;
+}
+
+.jqPuzzle .jqp-controls a {
+    margin-top: 5px;
+    margin-right: 8px;
+    padding: 3px 5px;
+    border: 1px outset #FFFFFF;
+    background-color: #777799;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: normal;
+    float: left;
+}
+
+.jqPuzzle .jqp-controls a:hover {
+    background-color: #7777BB;
+}
+
+.jqPuzzle .jqp-controls a.jqp-toggle,
+.jqPuzzle .jqp-controls a.jqp-down {
+    padding-left: 4px;
+    padding-right: 6px;
+    border-style: inset;
+    background-color: #BBBBFF;
+}
+
+.jqPuzzle .jqp-controls a.jqp-disabled {
+    background-color: #DDDDEE;
+    color: #FFFFFF;
+}
+
+.jqPuzzle .jqp-controls span {
+    margin-top: 5px;
+    padding: 2px 4px;
+    padding-left: 0px;
+    border: none;
+    background-color: transparent;
+    color: #666666;
+    font-size: 14px;
+    float: left;
+}
+
+.jqPuzzle .jqp-controls span.jqp-disabled {
+    color: #AAAAAA;
+}
+
+.jqPuzzle.jqp-solved .jqp-controls span {
+    padding: 1px 3px;
+    border: 1px dotted #0F8F08;
+    background-color: #9FEF86;
+    color: #0F8F08;
+}
+
+.jqPuzzle .jqp-controls span input {
+    margin: 0px 3px;
+    padding: 3px;
+    padding-bottom: 2px;
+    border-style: none;
+    background-color: #FFFFFF;
+    color: #666666;
+    font-weight: bold;
+    text-align: right;
+}
+
+.jqPuzzle .jqp-controls span.jqp-disabled input {
+    background-color: #EEEEFF;
+    color: #AAAAAA;
+}
+
+.jqPuzzle.jqp-solved .jqp-controls span input {
+    background-color: #C2FFAF;
+    color: #444444;
+}

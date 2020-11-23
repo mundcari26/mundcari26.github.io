@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mundo Caricatura">
+    <meta name="author" content="DesMex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mundo Caricatura</title>
+
+    <!-- Compiled and minified CSS 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+    <link rel="stylesheet" href="../Css/materialize.min.css">
+
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/main.css">
+
+
+    <script type="module" src="../cmp/banner.js"></script>
+</head>
+
+<body>
+    <ban-ner></ban-ner>
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating red btn-large">
+            <i class="material-icons">report_problem</i>
+        </a>
+        <ul>
+            <li>
+                <a href="" class="btn-floating yellow">
+                    <i class="material-icons">warning</i>
+                </a>
+
+            </li>
+            <li>
+
+                <a href="" class="btn-floating blue">
+                    <i class="material-icons">link</i>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    <div class="card">
+
+        <div class="card horizontal blue lighten-2">
+
+            <div class="card-image  blue lighten-2">
+                <i class="zmdi zmdi-account-circle zmdi-hc-5x"><img  class="circle responsive-img" src="../img/bob.png" style="max-width: 90px; max-height: 90px"></i>
+            </div>
+            <div class="card-stacked blue lighten-2">
+                <div class="card-content blue lighten-2">
+                    <p>Intrucciones </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <center>
+        <h4><strong>Pikachu</strong></h4>
+    </center>
+
+    <div class="container">
+        <svg id="entorno" viewBox="0 0 594 586">
+			<g id="fondo"><image xlink:href="../img/pikachu.png" width="400" height="400" x="200" y="100"></image></g>
+			<g class="padre" id="0"><image xlink: href="../img/1.png" class="movil"></image></g>
+			<g class="padre" id="1"><image xlink: href="../img/2.png" class="movil"></image></g>
+			<g class="padre" id="2"><image xlink: href="../img/3.png" class="movil"></image></g>
+			<g class="padre" id="3"><image xlink: href="../img/4.png" class="movil"></image></g>
+			<g class="padre" id="4"><image xlink: href="../img/5.png" class="movil"></image></g>
+			<g class="padre" id="5"><image xlink: href="../img/6.png" class="movil"></image></g>
+			<g class="padre" id="6"><image xlink: href="../img/7.png" class="movil"></image></g>
+			<g class="padre" id="7"><image xlink: href="../img/8.png" class="movil"></image></g>
+			<g class="padre" id="8"><image xlink: href="../img/9.png" class="movil"></image></g>	
+		</svg>
+    </div>
+    <audio id="win" src="../media/win.mp3"></audio>
+
+    <!-- Compiled and minified JavaScript -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
+    <script src="../js/materialize.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems, {
+                direction: 'left'
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.fixed-action-btn1');
+            var instances = M.FloatingActionButton.init(elems, {
+                toolbarEnabled: true
+            });
+        });
+    </script>
+</body>
+
+</html>

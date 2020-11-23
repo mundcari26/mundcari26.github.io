@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mundo Caricatura">
+    <meta name="author" content="DesMex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mundo Caricatura</title>
+    <!-- Compiled and minified CSS-->
+    <link rel="stylesheet" type="text/css" href="../Css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="../Css/style.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script type="module" src="../cmp/banner.js"></script>
+</head>
+
+<body>
+    <ban-ner></ban-ner>
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating red btn-large">
+            <i class="material-icons">report_problem</i>
+        </a>
+        <ul>
+            <li>
+                <a href="" class="btn-floating yellow">
+                    <i class="material-icons">warning</i>
+                </a>
+
+            </li>
+            <li>
+
+                <a href="" class="btn-floating blue">
+                    <i class="material-icons">link</i>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    <div class="card">
+
+        <div class="card horizontal blue lighten-2">
+
+            <div class="card-image  blue lighten-2">
+                <i class="zmdi zmdi-account-circle zmdi-hc-5x"><img  class="circle responsive-img" src="../img/bob.png" style="max-width: 90px; max-height: 90px"></i>
+            </div>
+            <div class="card-stacked blue lighten-2">
+                <div class="card-content blue lighten-2">
+                    <p>Intrucciones </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <center>
+        <h4><strong>Dificultad Experta</strong></h4>
+    </center>
+
+    <div class="container">
+        <img id="gasometer" class="responsive-img" src="" />
+    </div>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
+    <script src="../js/materialize.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="../js/jquery.jqpuzzle.full.js"></script>
+    <script type="text/javascript">
+        //Rutas a imagenes que se cargaran al azar.
+        var imagenes = new Array(
+            '../img/56.jpg',
+            '../img/64.jpg',
+            '../img/74.jpg'
+        );
+        //Guarda la ruta de una imagen al azar.
+        var azar = Math.floor((Math.random() * imagenes.length) + 0);
+        var imagen = imagenes[azar];
+        $(document).ready(function() {
+            $("#gasometer").attr('src', imagen);
+            $('#gasometer').jqPuzzle({
+                cols: 9,
+                hole: 100,
+                shuffle: true,
+                numbers: false,
+                language: 'en',
+                success: {
+                    callback: function(results) {
+                        alert('Haz finalizado en ' + results.moves + ' Movimientos y ' +
+                            results.seconds + ' Segundos.');
+                    }
+                },
+                animation: {
+                    shuffleRounds: 1,
+                    slidingSpeed: 100,
+                    shuffleSpeed: 200
+                },
+                style: {
+                    gridSize: 0,
+                    overlap: false,
+                    backgroundOpacity: 0
+                },
+                control: {
+                    shufflePieces: false, // display 'Shuffle' button [true|false]
+                    confirmShuffle: false, // ask before shuffling [true|false]
+                    toggleOriginal: false, // display 'Original' button [true|false]
+                    toggleNumbers: false, // display 'Numbers' button [true|false]
+                    counter: true, // display moves counter [true|false]
+                    timer: true, // display timer (seconds) [true|false]
+                    pauseTimer: false // pause timer if 'Original' button is activated 
+                        // [true|false]
+                }
+            }, {
+                shuffleLabel: 'Mezclar',
+                toggleOriginalLabel: 'Ver Original',
+                toggleNumbersLabel: 'Numeros',
+                confirmShuffleMessage: 'Desea mezclar la imagen?',
+                movesLabel: 'Movimientos',
+                secondsLabel: 'segundos'
+            });
+        });
+    </script>
+</body>
+
+</html>

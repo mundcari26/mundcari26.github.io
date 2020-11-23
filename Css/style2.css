@@ -1,0 +1,108 @@
+#gasometer {
+    padding: 15px 110px; 
+    border-style: none; 
+    border-top: 6px solid #D19D00; 
+    border-bottom: 6px solid #D19D00; 
+    background-color: #000000; 
+    font-family: Georgia, "Times New Roman", Times, serif; 
+} 
+     
+#gasometer .jqp-wrapper { 
+    padding: 1px; 
+    border: 1px solid #D19D00; 
+    background-color: transparent; 
+} 
+ 
+#gasometer .jqp-piece { 
+    border: 1px solid #000000; 
+    color: #FFC105; 
+    font-size: 20px; 
+    line-height: 20px; 
+    text-align: center; 
+} 
+ 
+#gasometer .jqp-piece:hover { 
+    border-color: #856300; 
+    opacity: 0.9; 
+} 
+ 
+#gasometer .jqp-piece:hover span { 
+    padding: 3px; 
+    padding-top: 0px; 
+    background-color: #FFC105; 
+    color: #FFFFFF; 
+}             
+ 
+#gasometer .jqp-controls a { 
+    margin-top: 15px; 
+    margin-right: 5px; 
+    padding: 3px 16px; 
+    border: 3px double #000000; 
+    background-color: #D19D00; 
+    color: #FFFFFF; 
+    font-size: 16px; 
+    float: left; 
+} 
+ 
+#gasometer .jqp-controls a:hover { 
+    background-color: #FFC105; 
+} 
+ 
+#gasometer .jqp-controls a.jqp-toggle,  
+#gasometer .jqp-controls a.jqp-down { 
+    padding: 2px 15px; 
+    border-width: 4px; 
+    background-color: #856300; 
+} 
+ 
+#gasometer .jqp-controls a.jqp-disabled { 
+    background-color: #333333; 
+    color: #666666; 
+} 
+ 
+#gasometer .jqp-controls span { 
+    margin-top: 0px; 
+    padding: 2px; 
+    padding-top: 0px; 
+    padding-left: 0px; 
+    background-color: transparent; 
+    color: #CCCCCC; 
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 10px; 
+    float: left; 
+} 
+ 
+#gasometer .jqp-controls span.jqp-disabled { 
+    color: #777777; 
+} 
+ 
+#gasometer.jqp-solved .jqp-controls span { 
+    padding: 2px; 
+    padding-top: 0px; 
+    padding-left: 0px; 
+    border-style: none; 
+    background-color: #0E7F07; 
+    color: #FFFFFF; 
+} 
+ 
+#gasometer .jqp-controls span input { 
+    margin: 0px 3px; 
+    padding: 1px 2px; 
+    border: 0px none; 
+    background-color: #222222; 
+    color: #EEEEEE; 
+    font-family: inherit; 
+    font-size: 10px; 
+    font-weight: bold; 
+    text-align: right; 
+} 
+ 
+#gasometer .jqp-controls span.jqp-disabled input { 
+    color: #777777; 
+    font-weight: normal; 
+} 
+ 
+#gasometer.jqp-solved .jqp-controls span input { 
+    background-color: #59BF53; 
+    color: #FFFFFF; 
+} 
